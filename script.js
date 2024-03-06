@@ -47,33 +47,38 @@ function createBox(title, content) {
     return boxCon;
 }
 
-// creates div of boxes for projects, etc
-function divBoxes(divOrId, boxInfo) {
-    var container = (typeof divOrId === 'string') ? document.getElementById(divOrId) : divOrId;
+// // creates div of boxes for projects, etc
+// function divBoxes(divOrId, boxInfo) {
+//     var container = (typeof divOrId === 'string') ? document.getElementById(divOrId) : divOrId;
 
-    boxInfo.forEach(function(info) {
-        // Use the createBox function to create a box with the specified title and content
-        var box = createBox(info.title, info.content);
-        // Append the created box to the container
-        container.appendChild(box);
-    });
-}
+//     boxInfo.forEach(function(info) {
+//         // Use the createBox function to create a box with the specified title and content
+//         var box = createBox(info.title, info.content);
+//         // Append the created box to the container
+//         container.appendChild(box);
+//     });
+// }
 
-var info = [
-    { title: 'INVESTENSE', content: 'img' },
-    { title: 'Project 2', content: 'Description of Project 2' },
-    { title: 'Project 2', content: 'Description of Project 2' },
-];
+// var info = [
+//     { title: 'INVESTENSE', content: 'img' },
+//     { title: 'Project 2', content: 'Description of Project 2' },
+//     { title: 'Project 2', content: 'Description of Project 2' },
+// ];
 
 window.onload = function() {
     // to display main hero box
     var welc = document.getElementById('welcome');
-    welc.appendChild(createBox('Welcome to my Portfolio', 'See more content'));
+    welc.appendChild(createBox('Welcome to my Portfolio!', "Hi, I'm Lily.\nThis portfolio is still a work in progress. However feel free to explore and see what is on here already! (more to be added soon!) "));
     // to display current box
     var curr = document.getElementById('curr-info');
-    curr.appendChild(createBox('Current.exe', 'Seeking a Summer 2024 Internship/Co-op'));
+    curr.appendChild(createBox('Current.exe', 'Seeking a Co-op for the upcoming Summer/Fall focused on User Centric Design and Research'));
 
-    // internship box
-    divBoxes('project-box', info);
+    var proj1 = document.getElementById('project-box1');
+    proj1.appendChild(createBox("INVESTense.txt", "INVESTense is an educational website focused on teaching individuals of all levels the basics of finances and investing."));
+   
+    var proj1 = document.getElementById('project-box2');
+    proj1.appendChild(createBox("forME.txt", "forMe was my first ever project done during a HACKATHON, it is an app focused on education women on the current birth controls and mental health medication on the market."));
+
+    // divBoxes('project-box', info);
 };
 
