@@ -39,10 +39,28 @@ function createBox(title, content) {
     contentCon.className = 'content-con';
     boxCon.appendChild(contentCon);
 
-    var contTextCon = document.createElement('p');
-    contTextCon.className = 'cont-text-con';
-    contTextCon.textContent = content;
-    contentCon.appendChild(contTextCon);
+    // var contTextCon = document.createElement('p');
+    // contTextCon.className = 'cont-text-con';
+    // contTextCon.textContent = content;
+    // contentCon.appendChild(contTextCon);
+
+    // text
+    if (typeof content === 'string') {
+        // If content is text
+        var contTextCon = document.createElement('p');
+        contTextCon.className = 'cont-text-con';
+        contTextCon.textContent = content;
+        contentCon.appendChild(contTextCon);
+    } else if (content && content.src) {
+    // image
+        var imgCon = document.createElement('img');
+        imgCon.className = 'cont-img-con';
+        imgCon.src = content.src; 
+        if (content.alt) {
+            imgCon.alt = content.alt; 
+        }
+        contentCon.appendChild(imgCon);
+    }
 
     return boxCon;
 }
@@ -73,11 +91,17 @@ window.onload = function() {
     var curr = document.getElementById('curr-info');
     curr.appendChild(createBox('Current.exe', 'Seeking a Co-op for the upcoming Summer/Fall focused on User Centric Design and Research'));
 
-    var proj1 = document.getElementById('project-box1');
+    var proj1 = document.getElementById('proj1Desc');
     proj1.appendChild(createBox("INVESTense.txt", "INVESTense is an educational website focused on teaching individuals of all levels the basics of finances and investing."));
-   
-    var proj1 = document.getElementById('project-box2');
-    proj1.appendChild(createBox("forME.txt", "forMe was my first ever project done during a HACKATHON, it is an app focused on education women on the current birth controls and mental health medication on the market."));
+    
+    var proj1img = document.getElementById('project-1-img');
+    proj1img.appendChild(createBox("INVESTense.png", {src: "/assets/investense/icon.png", alt: "INVESTENSE Hero"}));
+
+    var proj2 = document.getElementById('proj2Desc');
+    proj2.appendChild(createBox("forME.txt", "forMe was my first ever project done during a HACKATHON, it is an app focused on education women on the current birth controls and mental health medication on the market."));
+
+    var proj2img = document.getElementById('project-2-img');
+    proj2img.appendChild(createBox("forME.png", {src: "/assets/forMe/icon.png", alt: "INVESTENSE Hero"}));
 
     // divBoxes('project-box', info);
 };

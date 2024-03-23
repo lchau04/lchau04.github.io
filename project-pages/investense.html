@@ -14,15 +14,18 @@
 
 <body>
     <header>
-        <nav class = "nav-bar">
+        <nav  class= "nav-bar">
             <div class = "nav-items">
+                <!-- logo -->
                 <a href = "/index.html" class = "logo">Lily</a>
-                <ul class = "nav-link-list">
-                    <li class= "nav-link"><a href = "/projects.html">PROJECTS</a></li>
-                    <li class= "nav-link"><a href = "/play.html">PLAY</a></li>
-                    <li class= "nav-link"><a href = "https://drive.google.com/file/d/1DT6wLFr7zHNl1jgKHsqcrKDragt9uxCC/view?usp=sharing" target="_blank">RESUME</a></li>
-                    <li class= "nav-link"><a href = "/about.html">ABOUT</a></li>
-
+                <div class="nav-toggle" id = "toggButton">
+                    <img class ="hamburger" src = "assets/hamburger.png">
+                </div>
+                <ul class = "nav-link-list" id = "navLinks">
+                    <li class = "navLink"><a class= "nav-link" href = "/projects.html">PROJECTS</a></li>
+                    <li class = "navLink"><a class= "nav-link" href = "/play.html">PLAY</a></li>
+                    <li class = "navLink"><a class= "nav-link" href = "https://drive.google.com/file/d/1DT6wLFr7zHNl1jgKHsqcrKDragt9uxCC/view?usp=sharing" target="_blank">RESUME</a></li>
+                    <li class = "navLink"><a class= "nav-link" href = "/about.html">ABOUT</a></li>
                 </ul>
             </div>
         </nav>
@@ -67,7 +70,7 @@
             </div>
             <div class = "proj-info-col">
                 <h3>Timeline</h3>
-                <img class = "proj-col-img" src = "/assets/investense/in-timeline.png">
+                <img class = "timeline" src = "/assets/investense/in-timeline.png">
             </div>
         <!-- target audience -->
             <div class = "proj-info-row">
@@ -75,9 +78,9 @@
                 <p>Young adults and College Students who are interested in bettering their financial education</p>
             </div>
         <!-- solution images -->
-            <div class = "proj-info-col">
+            <div class = "proj-info-row">
                 <h3>Solution</h3>
-                <img class=""
+                <img class="proj-gif" src = "/assets/investense/walkthrough.gif">
             </div>
         <!-- figma link -->
             <div class = "proj-info-row">
@@ -103,9 +106,8 @@
                 <h3>Card Sort</h3>
                 <div class = "proj-info-col">
                     <p>The aim of this card sorting exercise was to gain insights into how individuals categorize various financial terms they encounter during financial discussions, learning, or comprehension.</p>
-                    <br>
                     <p>By examining the categorization tendencies of individuals with varying levels of financial knowledge, I can better tailor my platform to address their preferences and prioritize specific subject areas within the realm of finance.</p>
-                    <!-- <img class = "proj-col-img" src= "../assets/investense/in-card-sort.png"> -->
+                    <img class = "proj-col-img" src= "../assets/investense/in-card-sort.png">
                     <h3>Card Sort Findings</h3>
                     <p>• RothIRAs and 401(k) were always grouped together as well as Scholarships/grants and FASFA</p>
                     <p>• participants usually made four to six different categories</p>
@@ -117,17 +119,87 @@
                 <h3>Interviews</h3>
                 <div class = "proj-info-col">
                     <p>The aim was to delve into participants' financial circumstances, their emotional perspectives on financial matters, and how they perceive the intersection of finances and college life.</p>
-                    <br>
                     <p>I focused on uncovering the complex relationship between financial well-being and the college experience in order to understand not only the financial aspects of participants' lives but also their underlying emotions and attitudes.</p>
-                    <br>
                     <p>The insights gathered from these interviews helped me develop a more comprehensive understanding of the challenges, concerns, and aspirations of individuals in managing their finances while pursuing higher education; and will assist in shaping features and solutions that cater to the platform I plan on developing.</p>   
                 </div>
             </div>
         <!-- insights -->
             <div class = "proj-info-row">
                 <h3>Insights</h3>
+                <div class = "proj-info-col">
+                    <p>• College students have no idea where to start with their finances or already have a steady understanding</p>
+                    <p>• Many individuals are interested in investing, but aren't sure where to start</p>
+                    <p>• Not many people know where to find these financial resources</p>
+                </div>
+            </div>
+        <!-- ideas -->
+            <div class = "proj-info-row">
+                <h3>Ideas</h3>
+                <div class = "proj-info-col">
+                    <p>• Create a way users can learn how to invest while making it fun and intuitive</p>
+                    <p>• Filtering and user personalization</p>
+                    <p>• Ability for users to choose the topics they want to learn</p>
+                </div>
+            </div>
+        <!-- muscow -->
+            <div class = "proj-info-row">
+                <h3>MuSCoW</h3>
+                <div class = "proj-info-col">
+                    <p>I created a MuSCoW chart to determine the final features that the platform should include</p>
+                    <img class = "proj-col-img" src ="/assets/investense/MuSCoW.png" alt="muscow">
+                </div>
+            </div>
+        <!-- persona -->
+            <div class = "proj-info-row">
+                <h3>Persona</h3>
+                <img class = "proj-col-img" src = "/assets/investense/persona.png" alt = "persona">
+            </div>
+        <!-- user journey map -->
+            <div class = "proj-info-row">
+                <h3>User Journey</h3>
+                <img class = "proj-col-img" src = "/assets/investense/journey-map 1.png" alt="journeymap">
+            </div>
+        <!-- ideation -->
+            <div class = "proj-info-row">
+                <h3>Sketches</h3>
+                <img class = "proj-col-img" src = "/assets/investense/sketches.png" alt="sketches">
+            </div>
+        <!-- user-flows -->
+            <div class = "proj-info-row">
+                <h3>User Flows</h3>
+                <img class = "proj-col-img" src = "/assets/investense/user-flows.png" alt="user-flows">
+            </div>
+        <!-- wireframes -->
+            <div class = "proj-info-row">
+                <h3>Wireframes</h3>
+                <img class = "proj-col-img" src = "/assets/investense/wireframes.png" alt="wireframes">
+            </div>
+        <!-- user testing -->
+            <div class = "proj-info-row">
+                <h3>User Testing</h3>
+                <div class = "proj-info-col">
+                    <p>The testing was the prototype was done in person faec to face, participants were presented the prototype with sessions being recorded. The feedback for the tests helped me have a better understanding of what changes needed to be made. Many participants noted that the investing portion was still difficult to comprehend and navigate.</p>
+                    <p>The total average success rate of participants and task completion is <b>87.5%</b></p>
+                    <img class = "proj-col-img" src = "/assets/investense/testing-results.png" alt="user research results">
+
+                </div>
+            </div>
+        <!-- reflections -->
+            <div class = "proj-info-row">
+                <h3>Reflections</h3>
+                <div class = "proj-info-col">
+                    <p>This was my first time going through the whole UX design process and it is evident that the platform requires further development and refinement, focusing on its content, interactions, and minor user interface elements to enhance the user experience. </p>
+                    <p>Looking ahead, I will make sure to have a better understanding of the problem statement I want to design for as well as the UX elements to implement to reach that goal.</p>
+                    <p>In terms of this project, the primary focus will be to tailor the platform to better serve college students, addressing their diverse academic needs. As, during the development I felt the platform stranded away from its initial intentions. Additionally, there's a need to revamp the simulation page, making it more accessible and user-friendly for newcomers. Exploring various methods to integrate simulations effectively into the platform will also be a key area of development.</p>
+                </div>
             </div>
         </section>
     </section>
-    
+    <footer>
+        <div class = "footer-con">
+            <div class = "foot-links">
+                <h2>Footer</h2>
+            </div>
+        </div>
+    </footer>
 </body>

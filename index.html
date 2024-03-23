@@ -21,10 +21,10 @@
                     <img class ="hamburger" src = "assets/hamburger.png">
                 </div>
                 <ul class = "nav-link-list" id = "navLinks">
-                    <li class= "nav-link"><a href = "./projects.html">PROJECTS</a></li>
-                    <li class= "nav-link"><a href = "./play.html">PLAY</a></li>
-                    <li class= "nav-link"><a href = "https://drive.google.com/file/d/1DT6wLFr7zHNl1jgKHsqcrKDragt9uxCC/view?usp=sharing" target="_blank">RESUME</a></li>
-                    <li class= "nav-link"><a href = "./about.html">ABOUT</a></li>
+                    <li class = "navLink"><a class= "nav-link" href = "./projects.html">PROJECTS</a></li>
+                    <li class = "navLink"><a class= "nav-link" href = "./play.html">PLAY</a></li>
+                    <li class = "navLink"><a class= "nav-link" href = "https://drive.google.com/file/d/1DT6wLFr7zHNl1jgKHsqcrKDragt9uxCC/view?usp=sharing" target="_blank">RESUME</a></li>
+                    <li class = "navLink"><a class= "nav-link" href = "./about.html">ABOUT</a></li>
                 </ul>
             </div>
         </nav>
@@ -36,17 +36,65 @@
     <section id = "projects">
         <h2 class = "proj-head">Featured Projects</h2>
         <div class = "projectItems">
-            <div id = "project-box1">
-                <button class = "projButton"><a href = "project-pages/investense.html">Learn More</a></button>
+            <div class ="projectItem">
+                <div id = "project-box1">
+                    <div id = "proj1Desc"></div>
+                    <div class = "box-con">
+                        <div class="con-head">
+                            <div class="title-text">Filter.exe</div>
+                            <div class="icons">
+                            <img class="icon" src="assets/minus.png" />
+                            <img class="icon" src="assets/window.png" />
+                            <img class="icon" src="assets/exit.png" />
+                            </div>
+                        </div>
+                        <div class = "content-con">
+                            <div class = "filterItems">
+                                <h3 class = "filter">Research</h2>
+                                <h3 class = "filter">Design</h2> 
+                                <h3 class = "filter">Usability Testing</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <a class = "projButton" href = "project-pages/investense.html">Learn More</a>
+                </div>
+                <div id = "project-1-img"></div>
             </div>
-            <div id = "project-box2">
-                <!-- <button class = "projButton"><a href = "project-pages/forMe.html">Learn More</a></button> -->
-                <button class = "projButton"><a href = "https://docs.google.com/presentation/d/1h19gbFFNKDsRu4oLcxwif7Wrs-yz5npG5czdJaLeeAk/edit?usp=sharing" target="_blank">Learn More</a></button>
-                   
+            <div class ="projectItem">
+                <div id = "project-box2">
+                    <div id = "proj2Desc"></div>
+                    <!-- FILTER TAGS SECTION -->
+                    <div class = "box-con">
+                        <div class="con-head">
+                            <div class="title-text">Filter.exe</div>
+                            <div class="icons">
+                            <img class="icon" src="assets/minus.png" />
+                            <img class="icon" src="assets/window.png" />
+                            <img class="icon" src="assets/exit.png" />
+                            </div>
+                        </div>
+                        <div class = "content-con">
+                            <div class = "filterItems">
+                                <h3 class = "filter">Hackathon</h2>
+                                <h3 class = "filter">Design</h2> 
+                                <h3 class = "filter">Research</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button class = "projButton"><a href = "project-pages/forMe.html">Learn More</a></button> -->
+                    <a class = "projButton" href = "https://docs.google.com/presentation/d/1h19gbFFNKDsRu4oLcxwif7Wrs-yz5npG5czdJaLeeAk/edit?usp=sharing" target="_blank">Learn More</a>
+                </div>
+                <div id = "project-2-img"></div>
+                <div>More comming...</div>
             </div>
         </div>
     </section>
     <footer>
+        <div class = "footer-con">
+            <div class = "foot-links">
+                <h2>Footer</h2>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="script.js"></script>
