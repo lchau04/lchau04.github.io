@@ -146,6 +146,19 @@ footer {
     background-color: #e4d0e9;
 }
 
+.foot-links {
+    display: flex;
+    flex-wrap: 1;
+    justify-content: space-between;
+}
+
+.foot-icons {
+    display: flex;
+    gap: 3em;
+}
+.foot-icon img{
+    max-width: 80px;
+}
 /* HOMEPAGE */
 
 #m-hero {
@@ -177,7 +190,11 @@ footer {
 } */
 
 /* FEATURED PROJECTS ON HOME PAGE */
-
+.main-more {
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+}
 .projButton {
     display: block;
     padding: .7em 1.5em;
@@ -212,12 +229,20 @@ footer {
     gap: 4em;  
 }
 
-.projectItem {
+.projectItem1 {
     display: flex;
-    background-color: #e4d0e9;
+    background-color: #eddef0;
     gap: 4em;
     padding: 2em 3em;
 }
+
+.projectItem2 {
+    display: flex;
+    background-color: #dbc1e2;
+    gap: 4em;
+    padding: 2em 3em;
+}
+
 #project-box1, #project-box2 {
    display: flex;
    flex: 1;
